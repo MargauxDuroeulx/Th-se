@@ -7,9 +7,12 @@ binaire (marche ou panne), avec pour hypothèse que les défaillances des compos
 L'objectif est de générer les liens minimaux (TS) dans le cas d'un système modélisé par un arbre de défaillance statique, 
 ou les séquences de liens minimales (MTSS) dans le cas d'un système modélisé par un arbre de défaillance dynamique.
 
-###
+Ces fichiers sont compilés avec Python 3. 
 
-1. Analyse de la fonction de structure à partir d'un arbre de défaillances statique
+# 1. Analyse de la fonction de structure à partir d'un arbre de défaillances statique
+
+Le fichier suivant est une librairie de fonctions utilisées par la suite.
+   - functions_lib
 
 Les fichiers suivants permettent de générer les liens minimaux d'un système statique.
    - maketiesDNF.py
@@ -25,12 +28,12 @@ Les fichiers suivants ont été développés par Romain Masson lors de son stage
    - mincutsSMT_Z3.py
 
 Les fichiers suivants contiennent la fonction de structure d'arbres de défaillances statiques et ont été converti 
-en fichiers smt2 par les fichiers de Romain Masson.
+en fichiers smt2 par les fichiers développés par Romain Masson.
    - test.cp
    - chinese.cp
    - baobab2.cp
 
-2. Analyse de la fonction de structure à partir d'un arbre de défaillances dynamique
+# 2. Analyse de la fonction de structure à partir d'un arbre de défaillances dynamique
 
 Les fichiers suivants permettent de générer les séquences de lien d'un système dynamique, puis de déterminer les 
 séquences de lien minimales. 
